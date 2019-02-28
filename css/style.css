@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu,
+.navigation,
+.offers,
+.top-footer,
+.contacts-footer,
+.navigation-footer,
+.main-footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+  box-shadow: 0 0 1px 1px red
+}
