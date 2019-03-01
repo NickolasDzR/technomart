@@ -28,3 +28,258 @@ ul {
   width: 960px;
   margin: 0 auto;
 }
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* functions menu (top) */
+
+.functions-site {
+  background-color: #293449;
+}
+
+.technomart-link {
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px 64.5px 15px 64.5px;
+  color: #ffffff;
+  font-family: "Cuprum";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form-search {
+  border: 0px solid black;
+  background-color: transparent;
+  padding: 10px 0 10px 35px;
+}
+
+.loupe {
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 12px;
+}
+
+.bookmark,
+.cart {
+  float: left;
+  margin-right: 9px;
+  margin-top: 2px;
+}
+
+.form-search::placeholder {
+  color: #ffffff;
+  font-family: "Cuprum";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.functions-sign {
+  color: #ffffff;
+  font-family: 'Cuprum';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.order-func {
+  background-color: #63a63e;
+  color: #ffffff;
+  font-family: 'Cuprum';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.indent {
+  padding: 7px 0px 0 0;
+}
+
+/* functions menu (top) */
+
+/* main-header, place where you can see navigation */
+
+.main-header {
+  background: #f4f7f9;
+}
+
+.site-about {
+  color: #ee3643;
+  font-family: 'Cuprum';
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.call-phone {
+  color: #ee3643;
+  font-family: 'Cuprum';
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  padding: 0 0 0 29px;
+}
+
+.phone-svg {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 22px;
+}
+
+.adress {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.enter,
+.registration {
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  background: white;
+  padding-left: 25px;
+}
+
+.enter-svg {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 17px;
+}
+
+.navigation-style {
+  display: flex;
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 #293449;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+
+}
+
+.navigation-list {
+  display: inline-block;
+}
+
+.navigation-list:nth-child(1) {
+  padding: 5px 45px 8px 35px;
+}
+
+.navigation-list:nth-child(2) {
+  padding: 5px 35px 8px 35px;
+}
+
+.navigation-list:nth-child(3) {
+  padding: 5px 35px 8px 35px;
+}
+
+.navigation-list:nth-child(4) {
+  padding: 5px 35px 8px 35px;
+}
+
+.navigation-list:nth-child(5) {
+  padding: 5px 35px 8px 35px;
+}
+
+.navigation-list:nth-child(6) {
+  padding: 5px 35px 8px 35px;
+}
+
+.navigation-list:nth-child(7) {
+  padding: 5px 35px 8px 35px;
+}
+
+/* main-header, place where you can see navigation */
+
+/* main contant part of the site */
+
+.paragraph-style {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.paragraph-transparent {
+  background-color: #000000;
+  opacity: 0.1;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  width: 136px;
+}
+
+.content-block-yl {
+  background-color: #ffbf47;
+}
+
+.content-block-bl {
+  background-color: #3bbce3;
+}
+
+.content-block-ppl {
+  background-color: #dc91d8;
+}
+
+.content-block-yl,
+.content-block-bl,
+.content-block-ppl {
+  padding: 25px 42px 22px 23px;
+}
+
+.new-flag {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.offers img {
+  float: right;
+}
+
+.offers {
+  padding-top: 59px;
+}
+
+.slider-paragraph-bold {
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  display: inline-block;
+  color: #fff;
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
+.slider-paragraph-slim {
+  position: absolute;
+  top: 38px;
+  left: 8px;
+  color: #fff;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* main contant part of the site */
