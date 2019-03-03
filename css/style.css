@@ -24,7 +24,9 @@ ul {
 .contacts-footer,
 .navigation-footer,
 .main-footer,
-.top-menu {
+.top-menu,
+.container-broadcrumps,
+.content {
   width: 960px;
   margin: 0 auto;
 }
@@ -361,7 +363,7 @@ p {
   width: 0;
   height: 0;
   border: 22px solid transparent;
-  border-left-color: #ee3643;;
+  border-left-color: #ee3643;
   position: absolute;
   right: -4px;
 } 
@@ -633,3 +635,202 @@ p {
 .adress-int {
   color: #ffd180;
 }
+
+/* catalog page. profile part */
+
+.profile-cont {
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  background: white;
+  padding-left: 25px;
+}
+
+.profile-img {
+  float: left;
+}
+
+.logout-img {
+  float: right;
+}
+
+.broadcrumps-mark {
+  display: flex;
+}
+
+.broadcrumps-list::after {
+  content: ">";
+  padding: 0 15px 0 15px;
+  color: #e5e8eb;
+}
+
+.stock {
+  background-color: #f2f6f8;
+}
+
+.main-sign-catalog {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-cost,
+.scale {
+  background-color: #f7f3ec;
+}
+
+.filter-sign {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.costs {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+.scale {
+  width: 250px;
+  height: 150px;
+  position: relative;
+}
+
+.sclale-brown {
+  width: 150px;
+  border: 2px solid #d7dcde;
+  text-align: center;
+  top: 74px;
+  position: absolute;
+  left: 50px;
+}
+
+.sclale-blue {
+  width: 110px;
+  border: 2px solid #00ca74;
+  position: absolute;
+  top: 74px;
+  left: 50px;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.toggle {
+  width: 2px;
+  height: 2px;
+  border: 1px solid #ababab;
+  border-radius: 50%;
+}
+
+.toggle-min {
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  position: absolute;
+  top: 65px;
+  left: 40px;
+  cursor: pointer;
+  box-sizing: content-box;
+  box-shadow: 0 3px 1px #eeeae4;
+}
+
+.toggle-max {
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  position: absolute;
+  top: 65px;
+  right: 83px;
+  cursor: pointer;
+  box-sizing: content-box;
+  box-shadow: 0 3px 1px #eeeae4;
+}
+
+.price-controls {
+}
+
+.price-min,
+.price-max {
+  display: inline-block;
+}
+
+.min-price,
+.max-price {
+  width: 95px;
+  height: 38px;
+  border: 0;
+  background-color: #eeeae4;
+}
+
+.dash {
+}
+
+.filter-checkbox {
+  position: relative;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+  padding-left: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+input + .checkbox-square {
+  background-image: url("../img/checkbox-off.svg");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 23px;
+  height: 23px;
+  fill: #b8b8b8;
+}
+
+input:checked + .checkbox-square {
+  background-image: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 23px;
+  height: 23px;
+  fill: #b8b8b8;
+}
+
+input:checked + .checkbox-square::before
+input:checked + .checkbox-square::after {
+  content: url("../img/checkbox-on.svg");
+  position: absolute;
+  top:0;
+  left:0;
+  width: 25px;
+  height: 25px;
+}
+/* catalog page. profile part */
