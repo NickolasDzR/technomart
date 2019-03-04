@@ -656,8 +656,8 @@ p {
   float: right;
 }
 
-.broadcrumps-mark {
-  display: flex;
+.broadcrumps-list li {
+  display: inline-block;
 }
 
 .broadcrumps-list::after {
@@ -807,30 +807,109 @@ p {
 input + .checkbox-square {
   background-image: url("../img/checkbox-off.svg");
   position: absolute;
-  top: 0px;
+  top: -2px;
   left: 0px;
   width: 23px;
   height: 23px;
-  fill: #b8b8b8;
 }
 
 input:checked + .checkbox-square {
   background-image: none;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 10px;
+  left: 10px;
   width: 23px;
   height: 23px;
-  fill: #b8b8b8;
 }
 
-input:checked + .checkbox-square::before
 input:checked + .checkbox-square::after {
   content: url("../img/checkbox-on.svg");
   position: absolute;
-  top:0;
-  left:0;
+  top: -2px;
+  left: 0px;
+  width: 23px;
+  height: 23p;
+}
+
+input + .checkbox-circle {
+  background-image: url("../img/radio-off.svg");
+  position: absolute;
+  top: -2px;
+  left: 0px;
   width: 25px;
   height: 25px;
 }
-/* catalog page. profile part */
+
+input:checked + .checkbox-circle {
+  background-image: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+input:checked + .checkbox-circle::after {
+  content: url("../img/radio-on.svg");
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  width: 25px;
+  height: 25p;
+}
+
+.show-button {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 15px 39px 14px 39px; 
+}
+
+.sorting-stuff {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f3ec;
+}
+
+.sorting-label {
+  flex: 0 0 16.6666%;
+  max-width: 16.6666%;
+}
+
+.sorting-for {
+  flex: 0 0 83.3333%;
+  max-width: 83.3333%;
+}
+
+
+.sort-prod {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sorting-list li{
+  display: inline-block;
+}
+
+
+.next {
+  display: block;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding:  14px 15px 15px 16px;
+}
+
+.number-page-li {
+  display: inline-block;
+}
