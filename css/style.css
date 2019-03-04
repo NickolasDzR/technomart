@@ -346,6 +346,7 @@ p {
 }
 
 .paragraph-prod-cost {
+  position: relative;
   background-color: #ee3643;
   padding: 13px 40px 13px 24px;
   text-align: right;
@@ -359,14 +360,16 @@ p {
   text-align: right;
 }
 
-.arrow {
+.paragraph-prod-cost:after {
+  content: "";
   width: 0;
   height: 0;
   border: 22px solid transparent;
   border-left-color: #ee3643;
   position: absolute;
-  right: -4px;
-} 
+  right: -44px;
+  top: 0px;
+}
 
 .products-style {
   border: 1px solid #eaeaea;
