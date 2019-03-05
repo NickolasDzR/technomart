@@ -148,21 +148,28 @@ p {
   padding: 0 35px 0 53px;
 }
 
+.phone-comp {
+  margin-top: -3px;
+  margin-left: -3px; 
+  margin-right: 26px;
+}
+
 .call-phone {
   color: #ee3643;
-  font-family: 'Cuprum';
+  font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
   border: 3px solid #ffffff;
-  padding: 0 0 0 29px;
+  padding: 9px 4px 10px 68px;
+  margin-top: 8px;
 }
 
 .phone-svg {
   display: block;
   position: absolute;
-  top: 4px;
-  left: 22px;
+  top: 21px;
+  left: 27px;
 }
 
 .adress {
@@ -171,9 +178,24 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  padding-top: 3px;
+  padding-left: 7px;
 }
 
-.enter,
+.enter {
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  background: white;
+  margin-left: 13px;
+  margin-top: 8px;
+  padding-top: 11px;
+  padding-left: 47px;
+  padding-bottom: 13px;
+}
+
 .registration {
   color: #000000;
   font-family: Cuprum;
@@ -181,14 +203,18 @@ p {
   font-weight: 400;
   line-height: 21px;
   background: white;
-  padding-left: 25px;
+  margin-left: -18px;
+  margin-top: 7px;
+  padding-top: 12px;
+  padding-left: 24px;
+  padding-bottom: 13px;
 }
 
 .enter-svg {
   display: block;
   position: absolute;
-  top: 2px;
-  left: 17px;
+  top: 22px;
+  left: 41px;
 }
 
 .navigation-style {
