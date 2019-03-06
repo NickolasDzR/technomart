@@ -446,13 +446,23 @@ p {
   margin-top: 20px;
 }
 
-.paragraph-products {
+.paragraph-products-style {
   color: #32425c;
   font-family: Cuprum;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.paragraph-products {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 0 24px;
+  margin-top: 10px;
 }
 
 .best-products {
@@ -463,23 +473,61 @@ p {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 55px;
+  padding: 10.5px 55px;
   border: 0;
   border-radius: 4px;
   text-decoration: none;
+  margin-left: 22px;
+  margin-top: -4px;
+  display: block;
 }
 
-.bg-prod {
+.best-manufactur {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 9.5px 71px;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 21px;
+  display: block;
+  margin-top: -4px;
+  margin-right: 0px;
+}
+
+.slider-link {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px 45.7px 10px 49.5px;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 22px;
+  left: 25px;
+}
+
+.product-container {
   background-color: #f9f5f0;
-  padding: 33px 24px 35px 30px;
+  padding: 30px 24px 25px 29px;
+  margin-top: 22px;
 }
 
-.parapgraph-products {
-  color: #000000;
-  font-family: "PT Sans";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
+.manufactur-container {
+  background-color: #f9f5f0;
+  padding: 28px 21px 27px 25px;
+  margin-top: 22px;
+  margin-bottom: 20px;
 }
 
 .span-products {
@@ -490,14 +538,13 @@ p {
   line-height: 18px;
   text-decoration: line-through;
   text-transform: uppercase;
-  padding: 20px 0 0 20px;
+  padding: 11px 0 0 2px;
 }
 
 .paragraph-prod-cost {
   position: relative;
   background-color: #ee3643;
-  padding: 13px 40px 13px 24px;
-  text-align: right;
+  padding: 11px 22px 10px 36px;
   color: #ffffff;
   font-family: "PT Sans";
   font-size: 17px;
@@ -506,16 +553,37 @@ p {
   text-transform: uppercase;
   display: inline-block;
   text-align: right;
+  margin-top: 10px;
+  margin-left: -13px;
+  border-radius: 3px 0 0px 3px;
 }
 
-.paragraph-prod-cost:after {
+.paragraph-cost-four {
+  position: relative;
+  background-color: #ee3643;
+  padding: 11px 22px 10px 36px;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: right;
+  margin-top: 39px;
+  margin-left: -13px;
+  border-radius: 3px 0 0px 3px;
+}
+
+.paragraph-prod-cost:after,
+.paragraph-cost-four:after {
   content: "";
   width: 0;
   height: 0;
-  border: 22px solid transparent;
+  border: 19px solid transparent;
   border-left-color: #ee3643;
   position: absolute;
-  right: -44px;
+  right: -38px;
   top: 0px;
 }
 
@@ -523,6 +591,9 @@ p {
   border: 1px solid #eaeaea;
   text-align: center;
   position: relative;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .fabricator-style {
@@ -532,7 +603,19 @@ p {
 }
 
 .indent-fabr {
-  margin-bottom: 85px;
+  margin-bottom: 65px;
+}
+
+.bosch-second {
+  margin: 24px 18px 28px 0;
+}
+
+.bosch-third {
+  margin: 18px 23px 18px 0px;
+}
+
+.bosch-four {
+  margin: 25px 36px 27px 0px;
 }
 
 /* main contant part of the site */
@@ -541,23 +624,24 @@ p {
 
 .menu-below-main {
   background-color: #f4f8f9;
-  margin-bottom: 82px;
-  padding-bottom: 63px;
 }
 
 .paragraph-service {
   color: #000000;
-  font-family: "PT Sans";
-  font-size:30px;
-  font-weight: 400;
-}
-
-.span-offer {
   font-family: Cuprum;
-  font-size: 13px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.paragraph-offer {
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 40px;
 }
 
 .offers-mark {
@@ -565,6 +649,8 @@ p {
   background-color: #32425c;
   margin: 0;
   padding: 0;
+  margin-top: 70px;
+  margin-right: 53px;
 }
 
 .offers-mark a {
@@ -572,7 +658,7 @@ p {
 }
 
 .list-mark-style a {
-  padding: 9px 0 9px 9px;
+  padding: 13px 0px 17px 22px;
   color: #ffffff;
   font-family: Cuprum;
   font-size: 21px;
@@ -591,8 +677,8 @@ p {
 
 .shadow-effect {
   position: absolute;
-  right: 11.6px;
-  top: -51px;
+  top: 29px;
+  right: 67px;
 }
 
 .delivery-paragraph {
@@ -602,6 +688,9 @@ p {
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 67px;
+  margin-left: -2px;
+  margin-bottom: 25px;
 }
 
 .delivery-span {
@@ -609,7 +698,9 @@ p {
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
-  padding-right: 70px;
+  padding-right: 16px;
+  margin-left: -3px;
+  line-height: 24px;
 }
 
 /* menu bellow main part of site */
@@ -654,10 +745,52 @@ p {
   font-style: 10px;
 }
 
+.bosch {
+  margin: 52px 0 53px 0;
+}
+
+.makita {
+  margin: 49px 0 54px 0;
+}
+
+.devalt {
+  margin: 47px 0 52px 0;
+}
+
+.interskol {
+  margin: 20px 0 35px 0;
+}
+
+.hitachi {
+  margin: 57px 0 55px 0;
+}
+
+.lg-company {
+  margin: 35px 0 35px 0;
+}
+
+.aeg-power {
+  margin: 21px 0 26px 0;
+}
+
+.metabo {
+  margin: 33px 0 41px 0;
+}
+
+.indent-fabr .col-3:nth-child(3n+1) {
+  margin-bottom: 20px;
+}
+
+.top-menu {
+  padding-top: 64px;
+  margin-bottom: 82px;
+  padding-bottom: 102px;
+}
+
 .cargo {
   position: absolute;
-  top: 10px;
-  left: -120px;
+  top: 93px;
+  left: -160px;
 }
 
 .about-us-link {
