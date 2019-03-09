@@ -206,7 +206,6 @@ p {
 }
 
 .navigation-style {
-  display: flex;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 #293449;
   margin: 0;
@@ -215,11 +214,13 @@ p {
 
 }
 
-.navigation-list {
-  display: block;
+.navigation-list,
+.navigation-li-footer {
+  display: inline-block;
 }
 
-.navigation-list a {
+.navigation-list a,
+.navigation-li-footer a {
   color: #ffffff;
   font-family: Cuprum;
   font-size: 17px;
@@ -228,31 +229,64 @@ p {
 }
 
 .navigation-list:nth-child(1) {
-  padding: 19px 29px 20px 52px;
+  padding: 19px 25px 20px 52px;
 }
 
 .navigation-list:nth-child(2) {
-  padding: 19px 23px 20px 35px;
+  padding: 19px 20px 20px 35px;
 }
 
 .navigation-list:nth-child(3) {
-  padding: 19px 26px 20px 36px;
+  padding: 19px 22px 20px 36px;
 }
 
 .navigation-list:nth-child(4) {
-  padding: 19px 34px 20px 34px;
+  padding: 19px 31px 20px 34px;
 }
 
 .navigation-list:nth-child(5) {
-  padding: 19px 25px 20px 25px;
+  padding: 19px 21px 20px 25px;
 }
 
 .navigation-list:nth-child(6) {
-  padding: 19px 37px 20px 37px;
+  padding: 19px 34px 20px 37px;
 }
 
 .navigation-list:nth-child(7) {
-  padding: 19px 26px 20px 26px;
+  padding: 19px 25px 20px 26px;
+}
+
+.navigation-list-footer {
+  margin: 0;
+  padding: 0;
+  margin-top: 39px;
+  margin-left: 69px;
+}
+
+.navigation-li-footer:nth-child(1) {
+  margin-right: 60px;
+}
+
+.navigation-li-footer:nth-child(2) {
+  margin-right: 59px;
+}
+
+.navigation-li-footer:nth-child(3) {
+  margin-right: 61px;
+}
+
+.navigation-li-footer:nth-child(4) {
+  margin-right: 59px;
+}
+
+.navigation-footer .container:nth-child(1) {
+  margin-bottom: 27px;
+}
+
+.main-footer {
+  background-color: #293449;
+  margin-top: 50px;
+  padding: 36px 0 29px 0;
 }
 
 /* main-header, place where you can see navigation */
@@ -327,6 +361,21 @@ p {
   margin-left: 1px;
 }
 
+.paragraph-transparent-car {
+  background-color: #000000;
+  opacity: 0.1;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 11px 0px 9px 35px;
+  width: 136px;
+  margin-top: 13px;
+  margin-left: 1px;
+}
+
 .content-block-yl {
   background-color: #ffbf47;
   padding: 20px 38px 22px 23px;
@@ -373,18 +422,23 @@ p {
 
 .car-img {
   float: right;
-  margin-top: 11.3px;
-  margin-right: 5px;
+  margin-top: 12.3px;
+  margin-right: -7px;
 }
 
-.materials,
-.content-block-gr img {
+.materials {
   float: right;
   margin-top: 11.3px;
   margin-right: 5px;
 }
 
 .car-img {
+  float: right;
+  margin-top: 5.3px;
+  margin-right: 3px;
+}
+
+.pottle {
   float: right;
   margin-top: 5.3px;
   margin-right: 3px;
@@ -542,7 +596,7 @@ p {
   display: inline-block;
   text-align: right;
   margin-top: 10px;
-  margin-left: -13px;
+  margin-left: -10px;
   border-radius: 3px 0 0px 3px;
 }
 
@@ -701,14 +755,39 @@ p {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
+  text-transform: uppercase;
+  margin-top: -4px;
+}
+
+.contacts-hd {
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: -4px;
+  margin-bottom: 27px;
 }
 
 .text-about {
   color: #000000;
   font-family: "PT Sans";
-  font-size: 13px;
+  font-size: 13.3px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  margin-top: 28px;
+  line-height: 22.1px;
+}
+
+.text-offer {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13.3px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  margin-top: 28px;
+  line-height: 22.1px;
+  padding-right: 80px;
 }
 
 .text-about-two {
@@ -716,11 +795,29 @@ p {
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
+  padding-right: 100px;
+  line-height: 22px;
+  margin-bottom: 23px;
 }
 
-.company-partners li{
-  position: relative;
+.company-partners {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 46px;
+}
 
+.company-partners-list{
+  position: relative;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 36px;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  margin-left: 74px;
 }
 
 .company-partners-list::before {
@@ -728,7 +825,7 @@ p {
   color: #ee3643;
   width: 25px;
   position: absolute;
-  left: -30px;
+  left: -36px;
   bottom: 4px;
   font-style: 10px;
 }
@@ -789,7 +886,7 @@ p {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 55px;
+  padding: 12px 41px 10px 41px;
   border: 0;
   border-radius: 4px;
   text-decoration: none;
@@ -797,6 +894,11 @@ p {
 
 .lil-map {
   border: none;
+}
+
+.map {
+  margin-top: 33px;
+  margin-bottom: 34px;
 }
 
 .popup {
@@ -807,10 +909,10 @@ p {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 55px;
   border: 0;
   border-radius: 4px;
   text-decoration: none;
+  padding: 11px 59px 9px 64px;
 }
 
 .top-footer {
@@ -824,22 +926,19 @@ p {
 .technomart-link-footer {
   background-color: #ee3643;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  padding: 10px 64.5px 15px 64.5px;
+  padding: 17px 64.5px 21px 42.5px;
   color: #ffffff;
-  font-family: "Cuprum";
-  font-size: 24px;
+  font-family: Cuprum;
+  font-size: 30px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
   display: block;
+  max-width: 220px;
 }
 
-.products-list {
-  display: flex;
-  text-align: center;
-}
 
-.navigation-li,
-.products-li {
+.navigation-li {
   display: inline-block;
   padding: 20px 50px 0 0;
 }
@@ -858,6 +957,30 @@ p {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+  margin-left: 3px;
+  padding-right: 30px;
+}
+
+.products-li {
+  display: inline-block;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 11px;
+}
+
+.products-li:nth-child(1) {
+  margin-right: 57px;
+}
+
+.products-li:nth-child(2) {
+  margin-right: 56px;
+}
+
+.products-li:nth-child(3) {
+  margin-right: 55px;
 }
 
 .products-li a {
@@ -874,6 +997,8 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  margin-left: 1px;
+  padding-right: 50px;
 }
 
 .footer {
@@ -881,18 +1006,26 @@ p {
 }
 
 .social-list {
-  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 68px;
 }
 
 .vk,
 .facebook,
 .instagram {
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 42px;
 }
 
 .social-li {
   background-color: #212a3a;
-  padding: 16px;
   border-radius: 50%;
+  display: inline-block;
 }
 
 .call-back {
@@ -901,6 +1034,16 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  margin-left: -5px;
+}
+
+.site-by {
+  color: #fff;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 21px;
 }
 
 .adress-int {
