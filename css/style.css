@@ -1,6 +1,6 @@
 body {
-  min-width: 960px;
-  margin: 0;
+  min-width: 970px;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Cuprum', 'PT Sans', sans-serif;
   font-size: 14px;
@@ -10,9 +10,6 @@ body {
   background-repeat: repeat;
 }
 
-.container {
-  max-width: 960px !important;
-}
 
 a {
   text-decoration: none;
@@ -21,20 +18,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-.menu,
-.navigation,
-.offers,
-.contacts-footer,
-.navigation-footer,
-.main-footer,
-.top-menu,
-.container-broadcrumps,
-.content,
-.adress-container {
-  width: 970px;
-  margin: 0 auto;
 }
 
 p {
