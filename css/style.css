@@ -1,4 +1,5 @@
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', 'PT Sans', sans-serif;
@@ -7,6 +8,10 @@ body {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: repeat;
+}
+
+.container {
+  max-width: 960px !important;
 }
 
 a {
