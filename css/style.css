@@ -18,6 +18,8 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -149,7 +151,7 @@ p {
   font-weight: 400;
   line-height: 21px;
   border: 3px solid #ffffff;
-  padding: 8px 4px 10px 71.1px;
+  padding: 9px 4px 10px 71.1px;
   margin-top: 8px;
 }
 
@@ -1059,25 +1061,12 @@ p {
   font-weight: 400;
   line-height: 21px;
   background: white;
-  padding-left: 25px;
-}
-
-.profile-img {
-  float: left;
-}
-
-.logout-img {
-  float: right;
-}
-
-.broadcrumps-list li {
-  display: inline-block;
-}
-
-.broadcrumps-list::after {
-  content: ">";
-  padding: 0 15px 0 15px;
-  color: #e5e8eb;
+  padding-left: 12px;
+  margin-top: 8px;
+  margin-left: -5px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 46px;
 }
 
 .stock {
@@ -1326,4 +1315,96 @@ input:checked + .checkbox-circle::after {
 
 .number-page-li {
   display: inline-block;
+}
+
+/* CATALOG */
+
+.basket-catalog {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 11px 0px 13px 49px;
+  margin-right: -12px;
+  margin-left: -6px;
+}
+
+.cart-catalog {
+  float: left;
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+.profile-img {
+  position: absolute;
+  left: 23px;
+  top: 21px;
+}
+
+.logout-img {
+  position: absolute;
+  right: 24px;
+  top: 22px;
+}
+
+.profile-container {
+  text-align: left;
+}
+
+.profile-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 8.9px;
+  padding-left: 12px;
+}
+
+.profile-li {
+  display: inline-block;
+}
+
+.profile-li a {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.profile-li:nth-child(1)::after {
+  content: url("../img/dotted.svg");
+  position: relative;
+  color: #32425c;
+  top: -2px;
+  left: 15px;
+}
+
+.profile-li:nth-child(2) {
+  margin-left: 25px;
+}
+
+.home-svg {
+  position: relative;
+  top: 0px;
+  left: -1px;
+}
+
+.broadcrumps-list li {
+  display: inline-block;
+}
+
+.broadcrumps-list a {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.broadcrumps-li:not(:nth-child(4)):after {
+  content: url("../img/staple.svg");
+  padding: 0 14px 0 15px;
 }
