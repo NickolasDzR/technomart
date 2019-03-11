@@ -184,9 +184,9 @@
       </div>
     </div>
     <div class="content">
-      <div class="stock">
-        <div class="container">
-          <div class="row">
+      <div class="container">
+          <div class="stock">
+        <div class="row">
             <div class="col-3">
               <h1 class="main-sign-catalog">Перфораторы</h1>
             </div>
@@ -197,7 +197,7 @@
         <div class="row">
           <div class="col-3">
             <div class="filter-cost">
-              <p class="filter-sign">Фильтр</p>
+              <p class="filter-sign">Фильтр:</p>
             </div>
             <legend class="costs">Цена:</legend>
             <div class="range-controls">
@@ -223,10 +223,12 @@
                 <input class="max-price" type="text" name="max-cost-drill" value="30000">
               </label>
             </div>
+            <div class="line-container-filter"></div>
+            <legend class="fabricator-legent">Производители:</legend>
             <div class="variant-find-two">
               <fieldset>
                 <p><label id="slider" class="filter-checkbox">
-                    <input class="visually-hidden" type="checkbox" checked="">
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="checkbox-square">
                     </span>
                     Bosch
@@ -240,7 +242,7 @@
                   </label></p>
 
                 <p><label id="slider" class="filter-checkbox">
-                    <input class="visually-hidden" type="checkbox">
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="checkbox-square">
                     </span>
                     MAKITA
@@ -261,19 +263,21 @@
                   </label></p>
               </fieldset>
             </div>
-            <div class="vatiant-find-third">
+            <div class="line-container-filter"></div>
+            <legend class="fabricator-legent">Питание:</legend>
+            <div class="variant-find-third">
               <p><label id="slider" class="filter-checkbox">
                   <input class="visually-hidden" type="checkbox">
                   <span class="checkbox-circle">
                   </span>
-                  Сетевые
+                  Аккумуляторные
                 </label></p>
 
               <p><label id="slider" class="filter-checkbox">
                   <input class="visually-hidden" type="checkbox">
                   <span class="checkbox-circle">
                   </span>
-                  Аккамуляторные
+                  Сетевые
                 </label></p>
             </div>
             <button class="show-button" type="submit">Показать</button>
