@@ -631,15 +631,6 @@ p {
   top: 0px;
 }
 
-.products-style {
-  border: 1px solid #eaeaea;
-  text-align: center;
-  position: relative;
-  padding-top: 4px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-}
-
 .fabricator-style {
   border: 1px solid #eaeaea;
   text-align: center;
@@ -1509,4 +1500,35 @@ input:checked + .checkbox-circle::after {
 .variant-find-third {
   margin-left: 10px;
   margin-top: 14px;
+}
+
+.variant-drill-catalog .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.products-style {
+  border: 1px solid #eaeaea;
+  text-align: center;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  width: 220px !important;
+  height: 318px !important;
+}
+
+.variant-drill-catalog .col-4:nth-child(1) {
+  margin-right: 7px;
+  margin-left: -2px;
+}
+
+.variant-drill-catalog .col-4:nth-child(4n) {
+  margin-right: 7px;
+  margin-left: -2px;
+}
+
+.variant-drill-catalog .col-4:nth-child(3n) {
+  margin-left: 8px;
+  margin-right: -16px;
 }
