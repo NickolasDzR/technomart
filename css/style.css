@@ -1071,6 +1071,7 @@ p {
 
 .stock {
   background-color: #f2f6f8;
+  padding-bottom: 9px;
 }
 
 .scale {
@@ -1278,18 +1279,18 @@ input:checked + .checkbox-circle::after {
   display: flex;
   flex-wrap: wrap;
   background-color: #f7f3ec;
+  margin-top: 20px;
+  margin-left: -2px;
+  padding: 9px 0px 8px 18px;
 }
 
 .sorting-label {
-  flex: 0 0 16.6666%;
-  max-width: 16.6666%;
+  margin-left: -14px;
 }
 
 .sorting-for {
-  flex: 0 0 83.3333%;
-  max-width: 83.3333%;
+  padding-left: 36px;
 }
-
 
 .sort-prod {
   color: #000000;
@@ -1297,12 +1298,47 @@ input:checked + .checkbox-circle::after {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .sorting-list li{
   display: inline-block;
 }
 
+.sorting-list li:nth-child(1) {
+  color: #ee3643;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-right: 67px;
+}
+
+.sorting-list li:nth-child(2),
+.sorting-list li:nth-child(3) {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid red;
+  border-bottom-style: dotted;
+}
+
+.sorting-list li:nth-child(2) {
+  margin-right: 62px;
+}
+
+.sorting-list li:nth-child(4) {
+  margin-left: 43px;
+}
+
+.sorting-list li:nth-child(5) {
+  margin-left: 18px;
+}
 
 .next {
   display: block;
@@ -1426,7 +1462,7 @@ input:checked + .checkbox-circle::after {
 }
 
 .filter-cost {
-  margin: 29px -8px 0 0;
+  margin: 20px -8px 0 0;
   padding: 10px 19px 10px 19px;
   background-color: #f7f3ec;
   border-radius: 2px;
