@@ -861,8 +861,7 @@ p {
 
 .top-menu {
   padding-top: 64px;
-  margin-bottom: 82px;
-  padding-bottom: 102px;
+  padding-bottom: 69px;
 }
 
 .cargo {
@@ -1331,19 +1330,6 @@ input:checked + .checkbox-circle::after {
   margin-left: 18px;
 }
 
-.next {
-  display: block;
-  border: 1px solid #e5e5e5;
-  background-color: transparent;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  padding:  14px 15px 15px 16px;
-}
-
-.number-page-li {
-  display: inline-block;
-}
-
 /* CATALOG */
 
 .basket-catalog {
@@ -1518,17 +1504,59 @@ input:checked + .checkbox-circle::after {
   height: 318px !important;
 }
 
-.variant-drill-catalog .col-4:nth-child(1) {
+.variant-drill-catalog .col-4:nth-child(3n+1) {
   margin-right: 7px;
   margin-left: -2px;
 }
 
-.variant-drill-catalog .col-4:nth-child(4n) {
-  margin-right: 7px;
-  margin-left: -2px;
-}
-
-.variant-drill-catalog .col-4:nth-child(3n) {
+.variant-drill-catalog .col-4:nth-child(3n+3) {
   margin-left: 8px;
   margin-right: -16px;
+}
+
+.next-page {
+  margin-top: 52px;
+  margin-left: -3px;
+  margin-bottom: 60px;
+}
+
+.next {
+  display: block;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 9px 14px 9px 16px;
+  color: #111111;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.number-page-li {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.next-page-link {
+  display: block;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 9px 31px 9px 30px;
+  color: #111111;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.drill-about {
+  font-family: "PT Sans";
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: -0.4px;
 }
