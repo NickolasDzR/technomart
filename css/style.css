@@ -575,6 +575,7 @@ p {
 }
 
 .span-products {
+  display: block;
   color: #a9a9a9;
   font-family: "PT Sans";
   font-size: 17px;
@@ -582,7 +583,8 @@ p {
   line-height: 18px;
   text-decoration: line-through;
   text-transform: uppercase;
-  padding: 11px 0 0 2px;
+  padding: 0px 0 0 2px;
+  margin-top: 12px;
 }
 
 .paragraph-prod-cost {
@@ -614,7 +616,7 @@ p {
   text-transform: uppercase;
   display: inline-block;
   text-align: right;
-  margin-top: 39px;
+  margin-top: 40px;
   margin-left: -13px;
   border-radius: 3px 0 0px 3px;
 }
@@ -861,9 +863,13 @@ p {
 
 .top-menu {
   padding-top: 64px;
-  padding-bottom: 69px;
+  padding-bottom: 102px;
 }
 
+.top-menu-catalog {
+  padding-top: 64px;
+  padding-bottom: 69px;
+}
 .cargo {
   position: absolute;
   top: 93px;
@@ -909,6 +915,7 @@ p {
 
 .top-footer {
   margin-bottom: 86px;
+  margin-top: 82px;
 }
 
 .nav-footer {
@@ -1498,20 +1505,8 @@ input:checked + .checkbox-circle::after {
   text-align: center;
   position: relative;
   padding-top: 4px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   margin-top: 20px;
-  width: 220px !important;
-  height: 318px !important;
-}
-
-.variant-drill-catalog .col-4:nth-child(3n+1) {
-  margin-right: 7px;
-  margin-left: -2px;
-}
-
-.variant-drill-catalog .col-4:nth-child(3n+3) {
-  margin-left: 8px;
-  margin-right: -16px;
 }
 
 .next-page {
@@ -1532,6 +1527,10 @@ input:checked + .checkbox-circle::after {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.number-page-list {
+  margin-left: 15px;
 }
 
 .number-page-li {
@@ -1560,3 +1559,7 @@ input:checked + .checkbox-circle::after {
   font-size: 14px;
   letter-spacing: -0.4px;
 }
+
+.variant-drill-catalog .row > [class^col] {
+  padding: 0 10px;
+  }
