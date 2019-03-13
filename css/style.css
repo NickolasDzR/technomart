@@ -50,12 +50,6 @@ p {
   padding-bottom: 6px;
 }
 
-.form-search {
-  border: 0px solid black;
-  background-color: transparent;
-  padding: 11px 0 10px 26px;
-}
-
 .loupe {
   display: block;
   position: absolute;
@@ -63,11 +57,16 @@ p {
   top: 12px;
 }
 
-.bookmark,
+.bookmark {
+  position: relative;
+  top: 2px;
+  left: -10px;
+}
+
 .cart {
-  float: left;
-  margin-right: 9px;
-  margin-top: 2px;
+  position: relative;
+  top: 2px;
+  left: -12px;
 }
 
 .form-search::placeholder {
@@ -78,14 +77,37 @@ p {
   line-height: 18px;
 }
 
-.functions-sign,
-.basket-sign {
+.functions-sign {
+  display: block;
   color: #ffffff;
   font-family: 'Cuprum';
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
-  padding-left: 27px;
+  cursor: pointer;
+  padding: 10px 26px 12px 31px;
+}
+
+.basket-sign {
+  display: block;
+  color: #ffffff;
+  font-family: 'Cuprum';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  cursor: pointer;
+  padding: 10px 30px 12px 29px;
+  margin-right: -4px;
+}
+
+.functions-sign:hover,
+.basket-sign:hover {
+  background-color: #212a3a;
+}
+
+.functions-sign:active,
+.basket-sign:active {
+  background-color: #161d29;
 }
 
 .order-func {
@@ -95,26 +117,37 @@ p {
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
-  padding: 11px 0px 13px 20px;
-  margin-left: -18px;
+  padding: 11px 22px 12px 20px;
 }
 
 .indent {
   padding: 7px 0px 0 0;
 }
 
-.indent-bookmark {
-  padding-left: 22px;
-  padding-top: 11px;
+.menu-list li {
+  display: inline-block;
+  position: relative;
 }
 
-.indent-cart {
-  padding-left: 12px;
-  padding-top: 11px;
+.menu-li:nth-child(2)::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  opacity: 0.3;
+  background: url("../img/cart-icon.svg") no-repeat;
 }
 
-.basket-sign {
-  padding-left: 31px;
+.menu-li:nth-child(2):hover::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  background: url("../img/cart-icon.svg") no-repeat;
 }
 
 .adress-container {
@@ -1560,6 +1593,51 @@ input:checked + .checkbox-circle::after {
   letter-spacing: -0.4px;
 }
 
-.variant-drill-catalog .row > [class^col] {
-  padding: 0 10px;
-  }
+/* active styles */
+
+.technomart-link:hover {
+  background-color: #ca2c37;
+}
+
+.technomart-link:focus {
+  background-color: #ba2732;
+}
+
+.form-search {
+  border: 0px solid black;
+  background-color: transparent;
+  padding: 11px 10px 15px 48px;
+  margin-left: -22px;
+  width: 270px;
+  height: 42px;
+}
+
+.form-search:hover {
+  padding-top: 11px;
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #212a3a;
+}
+
+.form-search:focus {
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 14px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.form-search:visited {
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 14px;
+  background-color: #ffffff;
+  color: #333333;
+}
