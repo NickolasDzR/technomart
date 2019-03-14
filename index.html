@@ -202,6 +202,10 @@
           </div>
           <div class="col-3">
             <div class="products-style">
+              <div class="actions">
+                <button class="buy-item" type="submit">Купить</button>
+                <button class="bookmarks" type="submit">В закладки</button>
+              </div>
               <img class="bosch-second" src="img/drill-two.jpg" alt="Перфоратор Bosch BFG 3000">
               <p class="paragraph-products">Перфоратор BOSCH BFG 3000</p>
               <p class="span-products">22500 Р.</p>
@@ -210,6 +214,10 @@
           </div>
           <div class="col-3">
             <div class="products-style">
+              <div class="actions">
+                <button class="buy-item" type="submit">Купить</button>
+                <button class="bookmarks" type="submit">В закладки</button>
+              </div>
               <img class="bosch-third" src="img/drill-three.jpg" alt="Перфоратор Bosch BFG 6000">
               <p class="paragraph-products">Перфоратор BOSCH BFG 6000</p>
               <p class="span-products">30500 Р.</p>
@@ -218,6 +226,10 @@
           </div>
           <div class="col-3">
             <div class="products-style">
+              <div class="actions">
+                <button class="buy-item" type="submit">Купить</button>
+                <button class="bookmarks" type="submit">В закладки</button>
+              </div>
               <img class="bosch-four" src="img/drill-four.jpg" alt="Перфоратор Bosch BFG 2000">
               <p class="paragraph-products">Перфоратор BOSCH BFG 2000</p>
               <p class="paragraph-cost-four">12500 Р.</p>
@@ -298,59 +310,97 @@
             <div class="col-4">
               <img class="shadow-effect" src="img/shadow.png" alt="эффект тени на меню">
               <ul class="offers-mark">
-                <li class="list-mark-style"><a href="#smth">Доставка</a></li>
-                <li class="list-mark-style"><a href="#smth">Гарантия</a></li>
-                <li class="list-mark-style"><a href="#smth">Кредит</a></li>
+                <li class="delivers li-effect"><a class="link_delivers" href="#smth">Доставка</a></li>
+                <li class="garanties"><a class="link_garanties" href="#smth">Гарантия</a></li>
+                <li class="credit"><a class="link_credit" href="#smth">Кредит</a></li>
               </ul>
             </div>
-            <div class="col-4">
-              <p class="delivery-paragraph">Доставка</p>
-              <p class="delivery-span">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!</p>
-            </div>
-            <div class="col-4">
-              <img class="cargo" src="img/cargo-img.png" alt="Картинка грузовичка">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="top-footer">
-      <div class="contacts-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-7">
-              <h3 class="name-company">КОМПАНИЯ «Техномарт»</h3>
-              <p class="text-about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-                строительства не
-                оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-              <p class="text-about-two">Мы можем доставить ваш товар в самые отдаленные точки России!
-                Техномарт работает со многими транспортными компаниями:</p>
-              <ul class="company-partners">
-                <li class="company-partners-list">Деловые линии</li>
-                <li class="company-partners-list">Автотрейдинг</li>
-                <li class="company-partners-list">ЖелДорЭкспедиция</li>
-              </ul>
-              <a class="about-us-link" href="#about-us">Подробнее о компании</a>
-            </div>
-            <div class="col-5">
-              <div class="contacts">
-                <h3 class="contacts-hd">Контакты</h3>
-                <span class="text-offer">Вы можете забрать товар сами,
-                  заехав в наш офис:</span>
-                <div class="map">
-                  <iframe class="lil-map" src="https://yandex.ru/map-widget/v1/-/CCUci-1~" width="300" height="158"
-                    allowfullscreen="true"></iframe>
+            <div class="delivers-cont display">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p class="delivery-paragraph">Доставка</p>
+                    <p class="delivery-span">Мы с удовольствием доставим ваш товар прямо
+                      к вашему подъезду совершенно бесплатно!<br>
+                      Ведь мы неплохо заработаем,<br>
+                      поднимая его на ваш этаж!</p>
+                  </div>
+                  <div class="col-5">
+                    <img class="cargo" src="img/cargo-img.png" alt="Картинка грузовичка">
+                  </div>
                 </div>
-                <button class="popup">Заблудились? Напишите нам!</button>
+              </div>
+            </div>
+            <div class="garanties-cont">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p class="delivery-paragraph">Гарантия</p>
+                    <p class="delivery-span">Если купленный у нас товар поломается или заискрит,<br>
+                      а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в
+                      нашей
+                      гарантии. Мы обменяем сгоревший товар на новый.<br>
+                      Дом уж восстановите как-нибудь сами.</p>
+                  </div>
+                  <div class="col-5">
+                    <img class="cargo" src="img/medal.png" alt="Картинка грузовичка">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="credit-cont">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7">
+                    <p class="delivery-paragraph">Кредит</p>
+                    <p class="delivery-span">Залезть в долговую яму стало проще!<br>
+                      Кредитные консультанты придут вам на помощь.
+                      <button class="get-offer" type="submit">Оформить заказ</a>
+                    </p>
+                  </div>
+                  <div class="col-5">
+                    <img class="cargo" src="img/credit.png" alt="Картинка грузовичка">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="top-footer">
+        <div class="contacts-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-7">
+                <h3 class="name-company">КОМПАНИЯ «Техномарт»</h3>
+                <p class="text-about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+                  строительства не
+                  оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                <p class="text-about-two">Мы можем доставить ваш товар в самые отдаленные точки России!
+                  Техномарт работает со многими транспортными компаниями:</p>
+                <ul class="company-partners">
+                  <li class="company-partners-list">Деловые линии</li>
+                  <li class="company-partners-list">Автотрейдинг</li>
+                  <li class="company-partners-list">ЖелДорЭкспедиция</li>
+                </ul>
+                <a class="about-us-link" href="#about-us">Подробнее о компании</a>
+              </div>
+              <div class="col-5">
+                <div class="contacts">
+                  <h3 class="contacts-hd">Контакты</h3>
+                  <span class="text-offer">Вы можете забрать товар сами,
+                    заехав в наш офис:</span>
+                  <div class="map">
+                    <iframe class="lil-map" src="https://yandex.ru/map-widget/v1/-/CCUci-1~" width="300" height="158"
+                      allowfullscreen="true"></iframe>
+                  </div>
+                  <button class="popup">Заблудились? Напишите нам!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </main>
   <footer class="nav-footer">
     <div class="navigation-footer">
@@ -434,11 +484,11 @@
           <div class="col-1"></div>
           <div class="col-2">
             <p class="call-back">Обратная связь:
-              <span class="adress-int">mail@htmlacademy.ru</span></p>
+              <a href="#smth"  class="adress-int">mail@htmlacademy.ru</a></p>
           </div>
           <div class="col-2">
             <p class="site-by">Разработано —
-              <span class="adress-int">htmlacademy.ru</span></p>
+              <a href="#smth" class="adress-int">htmlacademy.ru</a></p>
           </div>
         </div>
       </div>
@@ -447,6 +497,7 @@
     </div>
 
   </footer>
+  <script src="js/script.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
