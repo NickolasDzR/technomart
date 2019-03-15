@@ -100,6 +100,19 @@ p {
   margin-right: -4px;
 }
 
+.basket-item {
+  display: block;
+  color: #ffffff;
+  font-family: 'Cuprum';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  cursor: pointer;
+  padding: 10px 26px 13px 49px;
+  margin-right: -4px;
+  background-color: #ee3643;
+}
+
 .functions-sign:hover,
 .basket-sign:hover {
   background-color: #212a3a;
@@ -173,15 +186,29 @@ p {
   background: url("../img/cart-icon.svg") no-repeat;
 }
 
-.basket-sign:hover::before {
+.basket-item::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 11px;
+  left: 18px;
+  opacity: 0.3;
+  background: url("../img/cart-icon.svg") no-repeat;
+}
+
+.basket-sign:hover::before,
+.basket-item:hover::before {
   opacity: 1;
 }
 
-.basket-sign:active::before {
+.basket-sign:active::before,
+.basket-item:active::before {
   opacity: 0.5;
 }
 
-.basket-sign:active {
+.basket-sign:active,
+.basket-item:active {
   opacity: 0.5;
 }
 
@@ -1334,7 +1361,9 @@ p {
 
 /* catalog page. profile part */
 
-.profile-cont {
+.profile {
+  position: relative;
+  display: block;
   color: #000000;
   font-family: Cuprum;
   font-size: 21px;
@@ -1347,6 +1376,43 @@ p {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 46px;
+}
+
+.profile::before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  opacity: 0.3;
+  background: url("../img/profile.svg") no-repeat;
+}
+
+.profile::after {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 14px;
+  right: 11px;
+  opacity: 0.3;
+  background: url("../img/logout.svg") no-repeat;
+}
+
+.profile:hover::before,
+.profile:hover::after {
+  opacity: 1;
+}
+
+.profile:active::before,
+.profile:active::after {
+  opacity: 0.3;
+}
+
+.profile:active,
+.profile:active {
+  color: #c5c5c5;
 }
 
 .stock {
@@ -1674,6 +1740,14 @@ input:checked + .checkbox-circle::after {
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
+}
+
+.profile-li a:hover {
+  color: #ee3643;
+}
+
+.profile-li a:active {
+  color: #c5c5c5;
 }
 
 .profile-li:nth-child(1)::after {
