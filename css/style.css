@@ -96,7 +96,7 @@ p {
   font-weight: 400;
   line-height: 18px;
   cursor: pointer;
-  padding: 10px 30px 12px 50px;
+  padding: 11px 30px 12px 50px;
   margin-right: -4px;
 }
 
@@ -108,7 +108,7 @@ p {
   font-weight: 400;
   line-height: 18px;
   cursor: pointer;
-  padding: 10px 26px 13px 49px;
+  padding: 11px 26px 13px 49px;
   margin-right: -4px;
   background-color: #ee3643;
 }
@@ -759,7 +759,7 @@ p {
 .best-products:hover,
 .best-manufactur:hover,
 .about-us-link:hover,
-.popup:hover {
+.popup-button:hover {
   background-color: #ca2c37;
 }
 
@@ -767,7 +767,7 @@ p {
 .best-products:active,
 .best-manufactur:active,
 .about-us-link:active,
-.popup:active {
+.popup-button:active {
   background-color: #ba2732;
 }
 
@@ -943,10 +943,6 @@ p {
 .garanties-cont,
 .credit-cont {
   display: none;
-}
-
-.display {
-  display: block;
 }
 
 .shadow-effect {
@@ -1196,9 +1192,10 @@ p {
 .map {
   margin-top: 33px;
   margin-bottom: 34px;
+  cursor: pointer;
 }
 
-.popup {
+.popup-button {
   background-color: #ee3643;
   color: #ffffff;
   font-family: Cuprum;
@@ -1516,6 +1513,7 @@ p {
   padding: 0;
   margin: 0;
   text-align: center;
+  padding: 0 10px 0 10px;
 }
 
 .min-price {
@@ -1558,6 +1556,20 @@ p {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.checkbox-square,
+.checkbox-circle {
+  opacity: 0.5;
+}
+
+.checkbox-square:hover,
+.checkbox-circle:hover {
+  opacity: 0.3;
+}
+
+.opacity-checkbox {
+  opacity: 0.1;
 }
 
 input + .checkbox-square {
@@ -1647,8 +1659,36 @@ input:checked + .checkbox-circle::after {
   text-transform: uppercase;
 }
 
-.sorting-list li{
+.sorting-list li {
   display: inline-block;
+}
+
+.format-link {
+  display: block;
+  opacity: 0.3;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid red;
+  border-bottom-style: dotted;
+}
+
+.format-link:hover {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid #ee3643;
+  opacity: 1;
+}
+
+.format-link:active {
+  border: none;
+  color: #ee3643;
+  opacity: 1;
 }
 
 .sorting-list li:nth-child(1) {
@@ -1661,19 +1701,6 @@ input:checked + .checkbox-circle::after {
   margin-right: 67px;
 }
 
-.sorting-list li:nth-child(2),
-.sorting-list li:nth-child(3) {
-  opacity: 0.3;
-  color: #000000;
-  font-family: "PT Sans";
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 15px;
-  text-transform: uppercase;
-  border-bottom: 1px solid red;
-  border-bottom-style: dotted;
-}
-
 .sorting-list li:nth-child(2) {
   margin-right: 62px;
 }
@@ -1684,6 +1711,23 @@ input:checked + .checkbox-circle::after {
 
 .sorting-list li:nth-child(5) {
   margin-left: 18px;
+}
+
+.tringle {
+  fill: #231f20;
+}
+
+.tringle {
+  fill: #231f20;
+  opacity: 0.3;
+}
+
+.tringle:hover {
+  opacity: 1;
+}
+
+.tringle:active {
+  fill: #ee3643;
 }
 
 /* CATALOG */
@@ -1886,6 +1930,22 @@ input:checked + .checkbox-circle::after {
   text-transform: uppercase;
 }
 
+.next:hover,
+.next-page-link:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.next:active,
+.next-page-link:active {
+  border: 1px solid #ee3643;
+}
+
+.number-page-li:nth-child(1) .next {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+
 .number-page-list {
   margin-left: 15px;
 }
@@ -2062,4 +2122,56 @@ input:checked + .checkbox-circle::after {
 .instagram:active {
   background-color: #ee3643;
   border-radius: 50%;
+}
+
+.map-popup {
+  position: absolute;
+  z-index: 150;
+  bottom: -2040px;
+  left: 322px;
+  box-shadow: 0 0 17px #293449;
+  border: 0;
+}
+
+.map-frame {
+  border: 0;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: -29px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.popup-close::before,
+.popup-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  width: 25px;
+  height: 3px;
+  background-color: #ee3643;
+}
+
+.popup-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+  transform: rotate(-45deg);
+}
+
+.display {
+  display: block;
+}
+
+.none-display {
+  display: none;
 }

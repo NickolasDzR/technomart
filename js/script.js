@@ -74,3 +74,32 @@ link_credit.addEventListener("click", function (evt) {
   effect_delivers.classList.remove("li-effect");
   console.log("включаем popup добавляя form-show и удаляя form-unshow");
 });
+
+var map_frame = document.querySelector(".map");
+var popup_map = document.querySelector(".map-popup");
+var popup_close = document.querySelector(".popup-close");
+
+map_frame.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup_map.classList.add("display");
+  popup_map.classList.remove("none-display");
+  console.log("включаем карту");
+});
+
+popup_close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup_map.classList.remove("display");
+  popup_map.classList.add("none-display");
+  console.log("выключаем карту");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup_map.classList.contains("display")) {
+      evt.preventDefault();
+      popup_map.classList.remove("display");
+      popup_map.classList.add("none-display");
+      console.log("нажимаем esc и выключаем карту");
+    }
+  }
+});
