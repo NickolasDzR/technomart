@@ -77,7 +77,7 @@ link_credit.addEventListener("click", function (evt) {
 
 var map_frame = document.querySelector(".map");
 var popup_map = document.querySelector(".map-popup");
-var popup_close = document.querySelector(".popup-close");
+var map_close = document.querySelector(".map-close");
 
 map_frame.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -86,7 +86,7 @@ map_frame.addEventListener("click", function (evt) {
   console.log("включаем карту");
 });
 
-popup_close.addEventListener("click", function (evt) {
+map_close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_map.classList.remove("display");
   popup_map.classList.add("none-display");
@@ -99,6 +99,35 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       popup_map.classList.remove("display");
       popup_map.classList.add("none-display");
+      console.log("нажимаем esc и выключаем карту");
+    }
+  }
+});
+
+var popup_button = document.querySelector(".popup-button");
+var popup = document.querySelector(".popup");
+var popup_close = document.querySelector(".popup-close");
+
+popup_button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("display");
+  popup.classList.remove("none-display");
+  console.log("включаем попап");
+});
+
+popup_close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("display");
+  popup.classList.add("none-display");
+  console.log("выключаем карту");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("display")) {
+      evt.preventDefault();
+      popup.classList.remove("display");
+      popup.classList.add("none-display");
       console.log("нажимаем esc и выключаем карту");
     }
   }

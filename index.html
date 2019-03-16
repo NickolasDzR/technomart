@@ -391,7 +391,7 @@
                   <span class="text-offer">Вы можете забрать товар сами,
                     заехав в наш офис:</span>
                   <div class="map" href="#smth">
-                  <img class="map-img" src="img/map.jpg"> 
+                    <img class="map-img" src="img/map.jpg">
                   </div>
                   <button class="popup-button">Заблудились? Напишите нам!</button>
                 </div>
@@ -402,13 +402,25 @@
       </div>
   </main>
   <div class="map-popup none-display">
-    <button type="button" class="popup-close"></button>
+    <button type="button" class="map-close"></button>
     <iframe class="map-frame"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.3208587160895!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552669702612"
       width="940" height="447"></iframe>
   </div>
-  <div class="popup">
-    
+  <div class="popup none-display">
+    <button type="button" class="popup-close"></button>
+    <form class="form-callback" action="#" method="POST" name="form-callback">
+      <label><span>Ваше имя:</span>
+        <input class="your-name" type="text" placeholder="Имя Фамилия">
+      </label>
+      <label><span>Ваш e-mail:</span>
+        <input class="your-email" type="text" placeholder="email@example.com">
+      </label>
+      <label class="textarea-label"><span>Текст письма:</span>
+        <textarea class="your-text" type="text" placeholder="В свободной форме" cols="65" rows="5"></textarea>
+      </label>
+      <button class="send-form">Отправить</button>
+    </form>
   </div>
   <footer class="nav-footer">
     <div class="navigation-footer">

@@ -759,7 +759,8 @@ p {
 .best-products:hover,
 .best-manufactur:hover,
 .about-us-link:hover,
-.popup-button:hover {
+.popup-button:hover
+.send-form:hover {
   background-color: #ca2c37;
 }
 
@@ -767,7 +768,8 @@ p {
 .best-products:active,
 .best-manufactur:active,
 .about-us-link:active,
-.popup-button:active {
+.popup-button:active,
+.send-form:active {
   background-color: #ba2732;
 }
 
@@ -2125,10 +2127,10 @@ input:checked + .checkbox-circle::after {
 }
 
 .map-popup {
-  position: absolute;
+  position: fixed;
+  top: 100px;
+  left: 320px;
   z-index: 150;
-  bottom: -2040px;
-  left: 322px;
   box-shadow: 0 0 17px #293449;
   border: 0;
 }
@@ -2137,10 +2139,139 @@ input:checked + .checkbox-circle::after {
   border: 0;
 }
 
-.popup-close {
+.map-close {
   position: absolute;
   top: 5px;
   right: -29px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.map-close::before,
+.map-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  width: 25px;
+  height: 3px;
+  background-color: #ee3643;
+}
+
+.map-close::before {
+  transform: rotate(45deg);
+}
+
+.map-close::after {
+  transform: rotate(-45deg);
+}
+
+.display {
+  display: block;
+}
+
+.none-display {
+  display: none;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-callback {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  width: 620px;
+  height: 430px;
+  margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ff5358;
+  padding: 47px 77px 35px 81px;
+}
+
+.form-callback input {
+  display: block;
+  width: 220px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  padding: 8px 12px 8px 12px;
+  color: #a9a9a9;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 6px;
+}
+
+.form-callback textarea {
+  display: block;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  color: #a9a9a9;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  resize: none;
+  padding: 8px 13px 8px 13px;
+  margin-top: 6px;
+  width: 460px;
+  height: 114px;
+}
+
+.form-callback span {
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.your-name {
+  margin-right: 21px;
+}
+
+.textarea-label {
+  margin-top: 13px;
+  margin-bottom: 74px;
+}
+
+.send-form {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 11px 200px 9px 198px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 100px;
+  left: 482px;
+  z-index: 150;
+  background: #fff;
+}
+
+.popup-close {
+  position: absolute;
+  top: 17px;
+  right: 8px;
   width: 21px;
   height: 21px;
   font-size: 0;
@@ -2166,12 +2297,4 @@ input:checked + .checkbox-circle::after {
 
 .popup-close::after {
   transform: rotate(-45deg);
-}
-
-.display {
-  display: block;
-}
-
-.none-display {
-  display: none;
 }
