@@ -759,7 +759,7 @@ p {
 .best-products:hover,
 .best-manufactur:hover,
 .about-us-link:hover,
-.popup-button:hover
+.popup-button:hover,
 .send-form:hover {
   background-color: #ca2c37;
 }
@@ -2128,10 +2128,13 @@ input:checked + .checkbox-circle::after {
 
 .map-popup {
   position: fixed;
-  top: 100px;
-  left: 320px;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -470px;
   z-index: 150;
   box-shadow: 0 0 17px #293449;
+  line-height: 0;
   border: 0;
 }
 
@@ -2262,10 +2265,12 @@ input:checked + .checkbox-circle::after {
 
 .popup {
   position: fixed;
-  top: 100px;
-  left: 482px;
+  top: 50%;
+  left: 50%;
   z-index: 150;
   background: #fff;
+  margin-left: -310px;
+  margin-top: -282px;
 }
 
 .popup-close {
