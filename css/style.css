@@ -760,7 +760,8 @@ p {
 .best-manufactur:hover,
 .about-us-link:hover,
 .popup-button:hover,
-.send-form:hover {
+.send-form:hover,
+.get-order:hover {
   background-color: #ca2c37;
 }
 
@@ -769,7 +770,8 @@ p {
 .best-manufactur:active,
 .about-us-link:active,
 .popup-button:active,
-.send-form:active {
+.send-form:active,
+.get-order:active {
   background-color: #ba2732;
 }
 
@@ -2303,3 +2305,108 @@ input:checked + .checkbox-circle::after {
 .popup-close::after {
   transform: rotate(-45deg);
 }
+
+.confirm-order {
+  width: 568px;
+  height: 258px;
+  z-index: 150;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  background-color: #fff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  padding: 40px 0px 30px 0px;
+}
+
+.confirms {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 43px;
+  padding: 0px 100px 0 73px;
+}
+
+.jackdaw {
+  display: block;
+}
+
+.get-item {
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 17px 0 0 27px;
+}
+
+.get-order {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px 57px 9px 55px;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 14px;
+}
+
+.continue-buy {
+  background-color: #fff;
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 8px 43px 8px 40px;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*
+.wrapper-form {
+  background-color: #f1f1f1;
+} */
+
+.buttons-accept {
+  padding: 35px 0px 33px 72px;
+  background-color: #f1f1f1;
+}
+
+.form-close {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.form-close::before,
+.form-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  width: 25px;
+  height: 3px;
+  background-color: #ee3643;
+}
+
+  .form-close::before {
+    transform: rotate(45deg);
+  }
+  
+  .form-close::after {
+    transform: rotate(-45deg);
+  }
