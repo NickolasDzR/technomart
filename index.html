@@ -94,7 +94,7 @@
             <ul class="navigation-style">
               <li class="navigation-list"><a class="main-link" href="smth">Главная</a></li>
               <li class="navigation-list"><a class="company-link" href="smth">Компания</a></li>
-              <li class="navigation-list"><a class="catalog-link" href="smth">Каталог</a></li>
+              <li class="navigation-list"><a class="catalog-link" href="catalog.html">Каталог</a></li>
               <li class="navigation-list"><a class="news-link" href="smth">Новости</a></li>
               <li class="navigation-list"><a class="offers-link" href="smth">Спецпредложения</a></li>
               <li class="navigation-list"><a class="delivery-link" href="smth">Доставка</a></li>
@@ -184,6 +184,25 @@
               <a class="best-products" href="catalog.html">Все популярные товары</a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="confirm-order none-display">
+        <button type="button" class="form-close"></button>
+        <div class="confirms">
+          <svg class="jackdaw" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 66 66"
+            enable-background="new 0 0 66 66" xml:space="preserve">
+            <circle fill="#63A63E" cx="33" cy="33" r="33" />
+            <path fill="#FFFFFF" d="M49.641,21.066c-0.389-0.389-1.025-0.389-1.414,0L29.788,39.504c-0.389,0.389-1.025,0.389-1.414,0
+l-8.14-8.139c-0.389-0.389-1.025-0.389-1.414,0L15.285,34.9c-0.389,0.389-0.389,1.025,0,1.414l13.089,13.09
+c0.389,0.389,1.025,0.389,1.414,0l3.536-3.536c0.389-0.389,1.025-1.025,1.414-1.414l18.438-18.438c0.389-0.389,0.389-1.025,0-1.414
+L49.641,21.066z" />
+          </svg>
+          <p class="get-item">Товар добавлен в корзину!</p>
+        </div>
+        <div class="buttons-accept">
+          <a class="get-order" href="#smth">Оформить заказ</a>
+          <button class="continue-buy" type="submit">Продолжить покупки</button>
         </div>
       </div>
       <div class="container">
@@ -411,15 +430,15 @@
     <button type="button" class="popup-close"></button>
     <form class="form-callback" action="#" method="POST" name="form-callback">
       <label><span>Ваше имя:</span>
-        <input class="your-name" type="text" placeholder="Имя Фамилия">
+        <input class="your-name" type="text" name="your-name" placeholder="Имя Фамилия">
       </label>
       <label><span>Ваш e-mail:</span>
-        <input class="your-email" type="text" placeholder="email@example.com">
+        <input class="your-email" type="text" name="your-email" placeholder="email@example.com">
       </label>
       <label class="textarea-label"><span>Текст письма:</span>
-        <textarea class="your-text" type="text" placeholder="В свободной форме" cols="65" rows="5"></textarea>
+        <textarea class="your-text" type="text" name="your-text" placeholder="В свободной форме" cols="65" rows="5"></textarea>
       </label>
-      <button class="send-form">Отправить</button>
+      <button type="submit" class="send-form">Отправить</button>
     </form>
   </div>
   <footer class="nav-footer">
@@ -431,7 +450,7 @@
             <ul class="navigation-list-footer">
               <li class="navigation-li-footer"><a href="#something">Компания</a></li>
               <li class="navigation-li-footer"><a href="#something">Новости</a></li>
-              <li class="navigation-li-footer"><a href="#something">Каталог</a></li>
+              <li class="navigation-li-footer"><a href="catalog.html">Каталог</a></li>
               <li class="navigation-li-footer"><a href="#something">Доставка</a></li>
               <li class="navigation-li-footer"><a href="#something">Контакты</a></li>
             </ul>
