@@ -28,3 +28,18 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+var input = document.querySelector(".form-search");
+var label = document.querySelector(".search-label");
+
+input.addEventListener("focus", function(evt) {
+  evt.preventDefault();
+  label.classList.add("search-label-red");
+  label.classList.remove("search-label");
+});
+
+input.addEventListener("blur", function(evt) {
+  evt.preventDefault();
+  label.classList.add("search-label");
+  label.classList.remove("search-label-red");
+});

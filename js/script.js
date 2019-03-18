@@ -10,8 +10,6 @@ var popup_del = document.querySelector(".delivers-cont");
 var popup_gar = document.querySelector(".garanties-cont");
 var popup_cre = document.querySelector(".credit-cont");
 
-
-
 link_delivers.addEventListener("mouseover", function (evt) {
   link_delivers.classList.add("hover");
   console.log('мышка наведена');
@@ -133,26 +131,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-/*
-
-var send_form = document.querySelector(".send-form");
-
-var your_name = popup.querySelector("[name=your-name]");
-var your_email = popup.querySelector("[name=your-email]");
-var your_text = popup.querySelector("[name=your-text]");
-
-send_form.addEventListener("submit", function (evt) {
-  if (!your_name.value || !your_email.value || !your_text.value) {
-    evt.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
-    console.log("Нужно ввести пароль");
-  }
-});
-
-*/
-
 var confirm_order = document.querySelector(".confirm-order");
 var form_close = document.querySelector(".form-close");
 
@@ -184,3 +162,17 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+var input = document.querySelector(".form-search");
+var label = document.querySelector(".search-label");
+
+input.addEventListener("focus", function (evt) {
+  evt.preventDefault();
+  label.classList.add("search-label-red");
+  label.classList.remove("search-label");
+});
+
+input.addEventListener("blur", function (evt) {
+  evt.preventDefault();
+  label.classList.add("search-label");
+  label.classList.remove("search-label-red");
+});

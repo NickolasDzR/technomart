@@ -50,34 +50,38 @@ p {
   padding-bottom: 6px;
 }
 
+.search-label,
+.search-label-red {
+  padding: 0;
+  margin: 0;
+}
 
-
-.search-container::before {
+.search-label::before {
   content: "";
   width: 17px;
   height: 17px;
   background: url("../img/loupe.svg") no-repeat;
   position: absolute;
   top: 12px;
-  left: -5px;
+  left: 10px;
   opacity: 0.3;
   cursor: pointer;
 }
 
-.search-container:hover::before {
+.search-label:hover::before {
   opacity: 1;
 }
 
-.search-container-red::before {
+.search-label-red:active::before,
+.search-label-red::before {
   content: "";
   width: 17px;
   height: 17px;
   background: url("../img/loupe-active.svg") no-repeat;
   position: absolute;
   top: 12px;
-  left: -5px;
+  left: 10px;
   cursor: pointer;
-  opacity: 1;
 }
 
 .loupe {
@@ -671,10 +675,18 @@ p {
   margin-right: 3px;
 }
 
+.news-products {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 150;
+}
+
 .new-flag {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 8px;
+  z-index: 5;
 }
 
 .offers {
@@ -1315,7 +1327,7 @@ p {
 .products-list {
   margin: 0;
   padding: 0;
-  margin-left: 11px;
+  margin-left: 12px;
 }
 
 .products-li:nth-child(1) {
@@ -1564,7 +1576,7 @@ p {
   padding: 0;
   margin: 0;
   text-align: center;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 15px;
 }
 
 .min-price {
@@ -1582,9 +1594,6 @@ p {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-}
-
-.dash {
 }
 
 .filter-checkbox {
@@ -1614,8 +1623,8 @@ p {
   opacity: 0.5;
 }
 
-.checkbox-square:hover,
-.checkbox-circle:hover {
+.filter-checkbox:hover .checkbox-square,
+.filter-checkbox:hover .checkbox-circle {
   opacity: 0.3;
 }
 
@@ -1682,6 +1691,7 @@ input:checked + .checkbox-circle::after {
   border-radius: 3px;
   padding: 9px 39px 9px 38px;
   margin-top: 59px;
+  cursor: pointer;
 }
 
 .sorting-stuff {
@@ -1924,8 +1934,8 @@ input:checked + .checkbox-circle::after {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 11px;
   margin-bottom: 14px;
+  padding: 11px 0 0 0;
 }
 
 .fabricator-legent {
@@ -1935,8 +1945,8 @@ input:checked + .checkbox-circle::after {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 11px;
-  margin-bottom: 9.3px;
+  margin-bottom: 8.8px;
+  padding: 0;
 }
 
 .line-container-filter {
